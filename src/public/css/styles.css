@@ -1,0 +1,1074 @@
+    * {
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+        /* border: 1px solid red; */
+    }
+    
+    body {
+        background: #f5f6fa;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .icolow {
+        position: absolute;
+        left: 96%;
+        top: 25px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/arrowdow.png);
+        background-size: contain;
+    }
+    
+    .d3 {
+        width: 95%;
+    }
+    
+    .d4 {
+        width: 70%;
+    }
+    
+    .y7 {
+        background-color: gray;
+    }
+    
+    .box {
+        top: 10px;
+        left: 0px;
+        position: relative;
+        width: 110px;
+        font-size: large;
+        color: #17202A;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .abox {
+        justify-self: center;
+        left: 10%;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        padding-left: 10px;
+        max-width: 700px;
+        border: 2px solid black;
+        border-radius: 40px;
+    }
+    
+    .z4:hover,
+    .c1:hover {
+        background-color: transparent;
+    }
+    
+    input::placeholder {
+        color: black;
+        font-size: 23px;
+    }
+    
+    .z1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .z2 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        border: 2px solid rgb(155, 84, 18);
+        border-radius: 40px 10px;
+        background-color: rgb(246, 205, 180);
+        max-width: 700px;
+    }
+    
+    .ablack {
+        position: relative;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        background-color: rgba(32, 32, 32, 0.7);
+        top: -40px;
+    }
+    
+    .index {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .navbar {
+        background: rgb(243, 185, 76);
+    }
+    
+    .nav-link {
+        color: #fff;
+    }
+    
+    .mastwall {
+        position: absolute;
+        color: white;
+        width: 100%;
+        height: 120%;
+        background: url('/img/ws.jpg');
+        background-position: center center;
+        background-size: cover;
+        filter: blur(4px);
+        z-index: -1;
+    }
+    
+    .mw2 {
+        background: url('/img/ws2.jpg');
+        background-size: cover;
+        height: 1300px;
+        filter: blur(6px);
+    }
+    
+    .mw3 {
+        background: url('/img/ws4.jpg');
+    }
+    
+    .mw4 {
+        background: url('/img/ws3.jpg');
+    }
+    
+    .mw5 {
+        height: 300%;
+        background: none;
+        background-color: blanchedalmond;
+    }
+    
+    .masthead {
+        color: white;
+        min-height: 30rem;
+        width: 100%;
+        height: 100%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background: url('/img/wp.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .masthead h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    @media (min-width: 992px) {
+        .masthead {
+            height: 100vh;
+        }
+        .masthead h1 {
+            font-size: 5.5rem;
+        }
+    }
+    
+    .dnone2 {
+        display: flex;
+        justify-content: center
+    }
+    /*------------------------ A ----------------------*/
+    
+    input:focus {
+        outline: 0;
+        border: 3px solid rgb(155, 84, 18);
+    }
+    
+    button:focus {
+        outline: 0;
+    }
+    
+    a,
+    button,
+    button:focus {
+        border: none;
+        text-decoration: inherit;
+        color: inherit;
+        outline: 0px;
+    }
+    
+    a:hover,
+    button:hover {
+        text-decoration: inherit;
+        transition: all 1s;
+        color: brown;
+        background-color: rgb(255, 216, 200);
+    }
+    
+    a:not(:hover),
+    button:not(:hover) {
+        transition: all 1s;
+    }
+    
+    .ablocktitle {
+        position: relative;
+        display: flex;
+        background-color: rgba(32, 32, 32, 0.7);
+        height: 150px;
+        align-content: center;
+    }
+    
+    .atitle {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+    }
+    
+    .ablockinfo {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .bblockinfo {
+        height: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .aunion {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        max-width: 500px;
+    }
+    
+    .ainfo {
+        color: rgb(156, 71, 22);
+        position: relative;
+        font-weight: 500;
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        height: 80px;
+        align-items: center;
+    }
+    
+    .fa2 {
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        top: -3px;
+    }
+    
+    .z6 {
+        position: relative;
+        align-self: center;
+        display: flex;
+        height: 40px;
+        border: 3px solid rgb(221, 115, 16);
+        border-radius: 40px;
+        background-color: blanchedalmond;
+        width: 150px;
+    }
+    
+    .z5 {
+        position: relative;
+        right: 40%
+    }
+    
+    .z3 {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-self: left;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        font-size: 30px;
+        text-shadow: rgba(10, 10, 10, 0.931);
+        color: rgb(246, 132, 65);
+    }
+    
+    .z9 {
+        top: 40px;
+    }
+    
+    .acontainer {
+        position: absolute;
+        top: -15PX;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        justify-content: center;
+    }
+    
+    .aunion2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        width: 100%;
+    }
+    
+    .aunion3 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 120px;
+    }
+    
+    .z7 {
+        top: 400px;
+    }
+    
+    .sp1 {
+        width: 20%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        border: 3px solid rgb(221, 115, 16);
+        border-radius: 40px;
+        background-color: blanchedalmond;
+    }
+    
+    .alogin {
+        position: absolute;
+        top: -80px;
+        height: 50px;
+        width: 200px;
+        background-color: rgba(252, 136, 92);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .alogin2 {
+        position: absolute;
+        top: -20px;
+        height: 50px;
+        width: 200px;
+        background-color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(252, 136, 92);
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .a4 {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.404);
+        margin-bottom: 40px;
+        border: 2px solid rgb(155, 84, 18);
+        border-radius: 20px;
+    }
+    
+    .a5 {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        flex-direction: column;
+    }
+    
+    .a6 {
+        position: relative;
+        display: flex;
+        width: 30%;
+        right: 2%;
+        height: 30px;
+        border: 2px solid rgb(155, 84, 18);
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: rgb(246, 205, 180);
+        animation: visited 3s forwards alternate;
+    }
+    
+    .f1 {
+        color: black;
+    }
+    
+    @keyframes visited {
+        0% {
+            background-color: green;
+            border: 2px solid black;
+        }
+        ;
+        66% {
+            background-color: green;
+            border: 2px solid black;
+        }
+        ;
+        100% {
+            background-color: orange;
+            border: 2px solid rgb(155, 84, 18);
+        }
+        ;
+    }
+    
+    @keyframes check {
+        0% {
+            border: 2px solid yellow;
+        }
+        ;
+        66% {
+            border: 2px solid green;
+        }
+        ;
+        100% {
+            background-color: orange;
+            border: 2px solid rgb(155, 84, 18);
+        }
+        ;
+    }
+    
+    .a7 {
+        position: relative;
+        left: 4%;
+    }
+    
+    .a8 {
+        position: relative;
+        left: 4%;
+    }
+    
+    .aregister {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 300px;
+        color: rgb(252, 136, 92);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 60px;
+        cursor: pointer;
+    }
+    
+    .aregistert,
+    .alogint {
+        all: unset
+    }
+    
+    .asubmit {
+        position: relative;
+        display: flex;
+        left: 10%;
+        align-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .bblocktitle {
+        display: flex;
+        background-color: rgb(58, 221, 228);
+        height: 80px;
+        justify-content: center;
+    }
+    
+    .b2 {
+        top: 200px;
+    }
+    
+    .bunion {
+        top: -200px;
+        align-self: center;
+        width: 100%;
+        position: relative;
+    }
+    
+    .slider {
+        display: flex;
+        height: 180px;
+        align-items: center;
+    }
+    
+    .ci {
+        position: relative;
+        height: 180px;
+        width: 100%;
+        background-size: cover
+    }
+    
+    #ci1b {
+        background-image: url(./img/Veggie.png);
+    }
+    
+    #ci2b {
+        background-image: url(./img/Focaccia.jpg);
+    }
+    
+    #ci3b {
+        background-image: url(img/Enchiladas.jpg);
+    }
+    
+    #ci4b {
+        background-image: url(img/pizza.jpg);
+    }
+    
+    .bsliderw,
+    .bsliderw2,
+    .bsliderw3 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .slide,
+    .slide2,
+    .slide3 {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        opacity: 0;
+        transition: opacity 1.5s linear;
+    }
+    
+    .bsliderw>.slide:first-child,
+    .bsliderw2>.slide2:first-child,
+    .bsliderw3>.slide3:first-child {
+        opacity: 1;
+    }
+    
+    .cblockimg {
+        position: relative;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    .cimg {
+        position: relative;
+        display: flex;
+        width: 600px;
+        height: 350px;
+        background-image: url("../imgs/delilah.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .cimg2 {
+        position: relative;
+        top: 30px;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        background-image: url("../imgs/created.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .cimg3 {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 150px;
+        background-image: url("../img/panel1.png");
+        background-size: cover;
+        background-position: center;
+        justify-self: center;
+    }
+    
+    .cblocktxt {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .cblocktxt2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 60px;
+        width: 380px;
+        height: 300px;
+        align-items: center;
+    }
+    
+    .cinfo {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        color: rgb(59, 59, 59);
+        position: relative;
+    }
+    
+    .cinfo2 {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 300px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: rgb(88, 88, 88);
+        top: 15px;
+    }
+    
+    #clogin {
+        position: relative;
+        top: 80px;
+    }
+    
+    .dheader {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 120px;
+        border-bottom: 2px solid rgb(155, 84, 18);
+        justify-content: space-between;
+        background: rgba(241, 158, 103, 0.7);
+    }
+    
+    .dmenu {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-self: center;
+        margin-right: 20px;
+        width: 280px;
+    }
+    
+    .doption {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 30px;
+        margin-bottom: 5px;
+        border: 2px solid rgb(155, 84, 18);
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .logo {
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        display: flex;
+        height: 60px;
+        background-image: url("../img/logo.png");
+        background-size: cover;
+        background-position: center;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        justify-items: center;
+        align-self: center;
+        width: 250px;
+        left: 30px;
+        border: 2px solid rgb(155, 84, 18);
+    }
+    
+    .menu {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .platos {
+        position: relative;
+    }
+    
+    .a3 {
+        position: relative;
+        margin-top: 120px;
+    }
+    
+    .dg {
+        position: relative;
+        width: 30px;
+        height: 2000px;
+    }
+    
+    .ccenter {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .a9 {
+        top: 100px;
+    }
+    
+    .cmenu {
+        position: relative;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: 2px solid rgb(155, 84, 18);
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        max-width: 800px;
+    }
+    
+    .f1 {
+        height: 100px;
+    }
+    
+    .z8 {
+        animation: check 1s forwards alternate;
+    }
+    
+    .c2 {
+        max-width: 1000px;
+        border: none;
+        background-color: transparent;
+    }
+    
+    .c3 {
+        top: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .t1,
+    .t2 {
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    .cavatar {
+        position: relative;
+        width: 78px;
+        height: 76px;
+    }
+    
+    .cgroup {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .data {
+        font-size: 20px;
+        height: 30px;
+        width: 300px;
+        overflow: hidden;
+        color: rgb(15, 182, 79);
+    }
+    
+    .data2 {
+        width: 100%;
+        height: 32px;
+        border-radius: 10px;
+    }
+    
+    .da3 {
+        opacity: 0;
+        overflow: hidden;
+    }
+    
+    .add {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background-size: cover;
+        background-image: url(../img/sumar.png);
+        background-color: transparent;
+        z-index: 10;
+    }
+    
+    .add:hover,
+    c3:hover,
+    .ask:hover {
+        background-color: transparent;
+    }
+    
+    .add:hover {
+        cursor: pointer;
+    }
+    
+    .del {
+        position: relative;
+        background-image: url(../img/delete.png);
+        top: 10px;
+        width: 60px;
+        height: 60px;
+        margin: 0px 5px 0 30px;
+    }
+    
+    .del2 {
+        position: absolute;
+        background-image: url(../img/delete.png);
+        top: 10px;
+        width: 60px;
+        height: 60px;
+        margin: 0px 5px 0 140px;
+    }
+    
+    .conf {
+        position: absolute;
+        background-image: url(../img/modify.png);
+        top: 80px;
+        width: 60px;
+        height: 60px;
+        margin: 0px 5px 0 140px;
+    }
+    
+    .cinfo {
+        position: relative;
+        left: 5%;
+    }
+    
+    .x1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dnone {
+        display: none;
+    }
+    
+    .bcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin-top: 30px;
+        position: absolute;
+        max-width: 35%;
+        padding: 20px;
+        border: 4px solid rgb(221, 115, 16);
+        border-radius: 30px;
+        background-color: rgb(246, 205, 180);
+    }
+    
+    .d1 {
+        height: 150px;
+    }
+    
+    .d2 {
+        width: 220px;
+    }
+    
+    .shrink {
+        animation: shrink .1s forwards alternate;
+    }
+    
+    .jiggle {
+        animation: jiggle 0.5s forwards ease-in-out;
+    }
+    
+    @keyframes shrink {
+        0% {}
+        100% {
+            transform: scale(.9);
+        }
+    }
+    
+    @keyframes jiggle {
+        0% {
+            transform: scale(.8);
+        }
+        20% {
+            transform: scale(.7);
+        }
+        40% {
+            transform: scale(.6);
+        }
+        60% {
+            transform: scale(.7);
+        }
+        80% {
+            transform: scale(.8);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @media screen and (max-width:900px) {
+        .acontainer {
+            display: none;
+        }
+        .ccenter {
+            width: 90%;
+            left: 5%;
+        }
+    }
+    
+    @media screen and (max-width:1200px) {
+        .bcontainer {
+            width: 90%;
+            max-width: none;
+        }
+        .z5 {
+            display: none;
+        }
+        .fa2 {
+            font-size: 20px;
+        }
+        .sp1 {
+            width: 200px;
+        }
+    }
+    
+    @media screen and (max-width:1800px) and (min-width:1200px) {
+        .bcontainer {
+            width: 60%;
+            max-width: none;
+        }
+        .m-2 {
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .dmenu,
+        .doption {
+            width: 200px;
+        }
+        .logo {
+            width: 220px;
+        }
+        .del2,
+        .conf {
+            left: 50%;
+        }
+    }
+    
+    @media screen and (max-width:490px) {
+        .dmenu,
+        .doption {
+            width: 110px;
+        }
+        .logo {
+            display: none;
+        }
+        .del2 {
+            left: 40%;
+            top: 80px
+        }
+        .conf {
+            left: 40%;
+            top: 160px
+        }
+        .d1 {
+            display: flex;
+            height: 300px;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+    
+    .c1 {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/arrow.png);
+        background-size: cover;
+        background-color: transparent;
+    }
+    
+    .c4 {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background-color: rgba(10, 10, 10, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid rgb(155, 84, 18);
+    }
+    
+    .delhed {
+        font-size: 40px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .c5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .cimg {
+        width: 40%;
+        height: 400px;
+        background-image: url(../img/delilah2.png);
+        background-size: cover;
+    }
+    
+    .c6 {
+        font-size: 22px;
+        color: rgb(252, 136, 92);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(173, 49, 0);
+        ;
+    }
+    
+    .number {
+        top: -10px;
+        position: relative;
+        width: 95px;
+        height: 95px;
+        background-image: url(../img/pointer.png);
+        background-size: cover;
+        z-index: 10;
+        border: 3px solid red;
+        border-radius: 25px;
+    }
+    
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .h3 {
+        opacity: 0;
+    }
+    
+    .ret {
+        background-image: url(../img/comeback.png);
+    }
