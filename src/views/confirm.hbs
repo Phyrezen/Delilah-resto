@@ -1,0 +1,113 @@
+<span class="mastwall mw5">
+</span>
+<div class="dheader">
+    <a class="logo" href="/"></a>
+    <div class="acontainer">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="text-center z2">
+                    <div class="card">
+                        <h2 id="msg1">¡Bienvenido {{user.username}}!</h2>
+                        <h4 id="msg2">
+                            Armá tu pedido, confirmalo y a disfrutar!
+                            </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ctables"></div>
+    <div class="dmenu">
+        <a href="profile" class="doption"> Menu</a>
+        <a href="information" class="doption">Mi cuenta</a>
+        <a href="/signin" class="doption">Salir</a>
+    </div>
+</div>
+
+
+<div class="x1">
+    <div class="ccenter bcontainer">
+        <div class="cmenu c3">
+            <a class="z4 " href="profile">
+                <p class="ainfo z6 fa2"><button class="cavatar c1"></button>volver</p>
+            </a>
+
+            <p class="ainfo z5">Tu Pedido</p>
+        </div>
+        <a href="http://localhost:4000/delilahresto/follow?" class="ask" id="pedido">
+            <div class="number"></div>
+        </a>
+
+        {{#each confirm}}
+        <div class="dnone" id="sumx">hay pedido</div>
+        <input class="dnone" type="text" name="id" value="{{id}}">
+        <input class="dnone" type="text" name="orders" value="{{resume}}">
+        <div class="cmenu z8">
+            <div class="cgroup">
+                <img class="cavatar" src="{{image}}"></img>
+                <div class="cinfo">
+                    <h5 class="m-2">{{description}}</h4>
+                        <h6 class="m-2">${{price}}</h6>
+                </div>
+            </div>
+            <a class="add del" id="dbtn" type="submit" href="/delilahresto/delete/{{id_menu}}"></a>
+        </div>
+        {{/each}}
+
+        <div class="dnone" id="sumx">no lo hay</div>
+        <div class="cmenu c3">
+            {{#each confirmed}}
+            <p class="ainfo">Total:
+            <p class="ainfo f1" value="10">${{suma}}</p>
+            </p>
+            {{/each}}
+            {{#each suma}}
+            <p class="ainfo"> Cantidad:
+            <p class="ainfo f1">{{cuenta}}</p>
+            </p>
+            {{/each}}
+        </div>
+        <form action='/delilahresto/confirm' method="POST">
+            <div class="cmenu c3">
+
+                <p class="ainfo">Forma de pago:</p>
+                <span class="sp1">
+                    <input type="radio" name="pay" value="tarjeta" required>
+                    <label for="tarjeta">
+                        <p class="ainfo fa2">Tarjeta</p>
+                    </label><br>
+                </span>
+                <span class="sp1">
+                    <input type="radio" name="pay" value="efectivo" required>
+                    <label for="efectivo">
+                        <p class="ainfo fa2">Efectivo</p>
+                    </label><br>
+                </span>
+            </div>
+
+
+            {{#each confirmed}}
+            <input class="dnone" id="ax" type="text" name="suma" value="{{suma}}">
+            {{/each}}
+            {{#each dataress}}
+            <input class="dnone" type="text" name="orders" value="{{datares}}">
+            {{/each}}
+            <input class="dnone" type="text" name="estado" value="Confirmado">
+            {{#each databigg}}
+            <input class="dnone" type="text" name="resume" value="{{databig}}">
+            {{/each}}
+
+            <div class="aunion2 a3">
+                <button class="alogin" id=zeroCo0l type="submit">
+                    Confirmar pedido!
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{{#each idnros}}
+<div class="dnone" id="numx">hay pedido</div>
+{{/each}}
+<div class="dnone" id="numx">no</div>

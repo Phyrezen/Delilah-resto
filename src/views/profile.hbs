@@ -1,0 +1,68 @@
+<span class="mastwall mw2"> </span>
+<div class="dheader">
+    <a class="logo" href="/"></a>
+    <div class="acontainer">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class=" text-center z2">
+                    <div class="card">
+                        <h2 id="msg1">¡Hola {{user.username}}!</h2>
+                        <h4 id="msg2">
+                            Armá tu pedido, confirmalo y a disfrutar!
+                            </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ctables"></div>
+
+    <div class="dmenu">
+        <form action='/delilahresto/admin' method="GET" class="dnones">
+            <button class="doption" id="admin" type="submit">Maestro</button></form>
+        <a href="information" class="doption">Mi cuenta</a>
+        <a href="/signin" class="doption">Salir</a>
+    </div>
+</div>
+<div class="ccenter ">
+    <div class="cmenu c3">
+        <a href="http://localhost:4000/delilahresto/follow?" class="ask" id="pedido">
+            <div class="number"></div>
+        </a>
+
+        <p class="ainfo" id="ainfo">Nuestros Platos</p>
+
+        <p id="maestro" type="text" name="id" value="" class="h3">{{user.type}} </p>
+
+    </div>
+</div>
+{{#each links}}
+<form action="/delilahresto/profile" method="POST">
+    <input class="dnone" type="text" name="id" value="{{id}}">
+    <input class="dnone" type="text" name="image" value="{{image}}">
+    <input class="dnone" type="text" name="description" value="{{description}}">
+    <input class="dnone" type="text" name="price" value="{{price}}">
+    <input class="dnone" type="text" name="resume" value="{{resume}}">
+    <div class="ccenter">
+        <div class="cmenu z8">
+            <div class="cgroup">
+                <img class="cavatar" src="{{image}}"></img>
+                <div class="cinfo">
+                    <h5 class="m-2 a3">{{description}}</h4>
+                        <h6 class="m-2">${{price}}</h6>
+                </div>
+            </div>
+            <button class="add" id="dbtn" type="submit"></button>
+        </div>
+    </div>
+</form>
+{{/each}}
+{{#each idnros}}
+<div class="dnone" id="numx">hay pedido</div>
+{{/each}}
+<div class="dnone" id="numx">no</div>
+<div class="aunion2 a3">
+    <a class="alogin" id=zeroCo0l href="/delilahresto/confirm">
+        Confirmar pedido!
+    </a>
+</div>

@@ -1,0 +1,61 @@
+<span class="mastwall mw5">
+</span>
+<div class="dheader">
+    <a class="logo" href="/"></a>
+    <div class="acontainer">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="text-center z2">
+                    <div class="card">
+                        <h2>{{user.username}}, recibimos tu pedido</h2>
+                        <h4>Cada 10 segundos refrescará la pantalla automáticamente</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ctables"></div>
+    <div class="dmenu">
+        <a href="profile" class="doption"> Menu</a>
+        <a href="information" class="doption">Mi cuenta</a>
+        <a href="/signin" class="doption">Salir</a>
+    </div>
+</div>
+<div class="x1">
+    <div class="ccenter bcontainer">
+        <div class="cmenu c3">
+            <a class="z4 " href="profile">
+                <p class="ainfo z6 fa2"><button class="cavatar c1"></button>volver</p>
+            </a>
+
+        </div>
+        {{#each idnros}}
+
+        <h1> Tu Pedido (Número de pedido {{id_menu}})</h1>
+        <div id="statuss" class="dnone">{{estado}}</div>
+        <div class="dnone" id="sumz">hay pedido</div>
+        <DIV>
+            <p class="ainfo z9">Estado:</p>
+            <img class="dnone" type="text" name="suma" value="{{estado}}">
+            <div id="estado" class="cimg3"></div>
+        </DIV>
+        <div class="line"></div>
+        <p class="ainfo ">Resumen:</p>
+
+        <h3> Platos: {{resume}}</h3>
+        <h3>Forma de pago: {{pay}}</h3>
+        <h3> Valor total: ${{suma}}</h3>
+        {{/each}}
+        <h3>Dirección de envío: {{user.address}}</h3>
+        <h3>Usuario: {{user.fullname}}</h3>
+        <div class="line"></div>
+        <h6>Ante cualquier duda comunicate con nosotros al: 011 4572 5262</h6>
+        <div class="dnone" id="sumz">no</div>
+        <div class="aunion2 a3">
+            <form action='/delilahresto/profile' method="GET" class="dnone2">
+                <button class="alogin" type="submit">Volver al menu</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Interactive/autorefresh.js"></script>

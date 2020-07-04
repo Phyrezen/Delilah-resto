@@ -1,0 +1,179 @@
+<span class="mastwall mw4"> </span>
+<div class="dheader">
+    <a class="logo" href="/"></a>
+
+    <div class="acontainer">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="text-center z2">
+                    <div class="card">
+                        <h2>¡Bienvenido {{user.username}}!</h2>
+                        <h4>
+                            Armá tu pedido, confirmalo y a disfrutar!
+                            </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ctables"></div>
+
+    <div class="dmenu">
+        <a href="profile" class="doption">Menu</a>
+        <a href="information" class="doption">Mi cuenta</a>
+        <a href="/signin" class="doption">Salir</a>
+    </div>
+</div>
+
+
+
+
+
+<div class="ccenter a9">
+    <div class="cmenu c2">
+
+        <div class="t1">
+            <div class=" a4">
+                <div class="a5">
+                    <form action='/delilahresto/information' method="POST">
+                        <div class="a7">Nombre de Usuario actual: <div class="data">{{user.username}}</div>
+                        </div>
+                        <div class="a8"><input class="data2" type="text" name="username" required autocomplete="off"
+                                type="text" placeholder=" ingrese un nuevo usuario" ></div>
+                </div>
+                <button type="submit" class="a6"> Cambiar username</button>
+            </div>
+            </form>
+
+
+            <div class=" a4" type="submit">
+                <div class="a5">
+                    <form action='/delilahresto/mail' method="POST">
+                        <div class="a7">Mail actual: <div class="data">{{user.email}}</div>
+                        </div>
+                        <div class="a8"><input class="data2" type="text" name="email" maxlength="30" required
+                                autocomplete="off" type="mail" placeholder=" ingrese un nuevo email" ></div>
+                </div>
+                <button type="submit" class="a6"> Cambiar mail</button>
+            </div>
+            </form>
+
+            <div class=" a4" type="submit">
+                <div class="a5">
+                    <form action='/delilahresto/name' method="POST">
+                        <div class="a7">Su nombre registrado: <div class="data">{{user.fullname}}</div>
+                        </div>
+                        <div class="a8"><input class="data2" type="text" name="fullname" maxlength="30" required
+                                autocomplete="off" type="text" placeholder=" ingrese su nombre"
+                                ></div>
+                </div>
+                <button type="submit" class="a6"> Cambiar nombre </button>
+            </div>
+            </form>
+        </div>
+        <div class="t2">
+            <div class=" a4" type="submit">
+                <div class="a5">
+                    <form action='/delilahresto/phone' method="POST">
+                        <div class="a7">Teléfono: <div class="data">{{user.phone}}</div>
+                        </div>
+                        <div class="a8"><input class="data2" type="number" name="phone" pattern="/^-?\d+\.?\d*$/"
+                                onKeyPress="if(this.value.length==30) return false;" required autocomplete="off"
+                                type="mail" placeholder=" ingrese un teléfono " ></div>
+                </div>
+                <button type="submit" class="a6"> Cambiar tel</button>
+            </div>
+            </form>
+
+            <div class=" a4" type="submit">
+                <div class="a5">
+                    <form action='/delilahresto/address' method="POST">
+                        <div class="a7">Dirección actual: <div class="data">{{user.address}}</div>
+                        </div>
+                        <div class="a8"><input class="data2" type="text" name="address" maxlength="30"  required autocomplete="off"
+                                type="text" placeholder=" ingrese su dirección " ></div>
+                </div>
+                <button type="submit" class="a6"> Cambiar dirección</button>
+            </div>
+            </form>
+
+                        <div class=" a4" type="submit">
+                <div class="a5">
+                    <form action='/delilahresto/type' method="POST">
+                        <div class="a7">Administración <div class="data">Sólo para empleados.</div>
+                        </div>
+                        <div class="a8"><input class="data2" type="text" name="type" maxlength="30"  required autocomplete="off"
+                                type="text" placeholder=" ingrese el código" ></div>
+                </div>
+                <button type="submit" class="a6 y7"> adm</button>
+            </div>
+            </form>
+
+            <h7>código para destrabar admin: akx24fyc78v_%&!</h7>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- 
+<div class="ablocktitle">
+    <h1 class="atitle">Mi Perfil</h1>
+</div>
+  <div class="asubmit">
+<form action='/signup' method="POST">
+    <div class="bblockinfo">
+        <div class="aunion">
+            <div class="ainfo">Usuario</div>
+            <input class="abox" type="text"  name="username" required autocomplete="off" type="text"
+                placeholder="su usuario actual es {{user.username}}, ingrese su nuevo usuario y confirme" >
+            <div class="ainfo">Nombre y Apellido</div>
+            <input class="abox" type="text"  name="fullname" required autocomplete="off" type="text"
+                placeholder="{{user.fullname}}">
+            <div class="ainfo">Correo Electrónico</div>
+            <input class="abox" type="email"  name="email" required placeholder="{{user.email}}"   autocomplete="off" type="text">
+            <div class="ainfo">Teléfono</div>
+            <input class="abox" type="int"  name="phone" required autocomplete="off" type="text"
+                placeholder="{{user.phone}}">
+            <div class="ainfo">Dirección de envío</div>
+            <input class="abox" type="text"  name="address" required  autocomplete="off" type="text"
+                placeholder="{{user.address}}">
+            <div class="ainfo">Contraseña</div>
+            <input class="abox" type="text"  name="password" required autocomplete="off" type="text"
+                placeholder="{{user.password}}">
+        </div>
+    </div>
+        <div class="aunion3">
+            <div class="ablocklogin">
+                <div class="aunion2">
+                    <button class="alogin" type="submit">
+                        MODIFICAR
+                    </button>
+                </div>
+          </form>
+                <div class="aunion3">
+                <a class="alogin2" href="/delilahresto/profile">
+                    VOLVER
+                </a>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+ --}}

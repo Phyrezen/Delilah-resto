@@ -1,0 +1,76 @@
+<div class="dheader">
+    <a class="logo" href="/"></a>
+    <div class="acontainer">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class=" text-center z2">
+                    <div class="card">
+                        <h2>Usuario: {{user.username}}</h2>
+                        <h4>
+                            ADMINISTRACIÓN (Refresh c/10s)
+                            </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ctables"></div>
+    <form   action='/delilahresto/history' method="GET" class="dmenu">
+        <a href="profile" class="doption">Menu</a>
+        <a href="add" class="doption"> Agregar un plato</a>
+        <button class="doption">Pedidos cerrados</button>
+    </form>
+</div>
+
+
+<div class="ccenter ">
+    <div class="cmenu c3">
+        <p class="ainfo">Pedidos pendientes</p>
+    </div>
+</div>
+<div class="x1">
+    <div class="ccenter bcontainer">
+        {{#each core}}
+        <div class="cmenu z8 f1 d1">
+            <div class="cgroup d4">
+                <div class="cinfo d3">
+                    <h5 class="m-2"><b>{{estado}}</b> {{id_menu}} </h5>
+                    <h5 class="m-2 d3">{{resume}}</h4>
+                        <h6 class="m-2">${{suma}} / Usr:{{user_id}}</h6>
+                </div>
+            </div>
+            <div class="d2">
+                <form action='/delilahresto/admin' method="POST">
+                    <div class="box">
+                        <input type="radio" name="estado" value="confirmado" id="confirmado">
+                        <label for="Confirmado" class="confirmado">Confirmado</label><br>
+                        <input type="radio" name="estado"  value="En preparacion">
+                        <label for="female" class="preparacion">Preparacion</label><br>
+                        <input type="radio" name="estado" value="En camino">
+                        <label for="other" class="camino">Viaje</label><br>
+                        <input type="radio" name="estado"  value="Entregado">
+                        <label for="other" class="entregado">Entregado</label>
+                    </div>
+                    <input class="dnone" type="text" name="menu" value="{{id_menu}}">
+                    <button class="add conf" id="dbtn" type="submit"></button>
+                </form>
+                <p class=" dnone arry">{{estado}}</p>
+                    <form action='/delilahresto/admin/id' method="POST">
+                        <input class="dnone" type="text" name="suma" value="{{suma}}">
+                        <input class="dnone" type="text" name="orders" value="{{orders}}">
+                        <input class="dnone" type="text" name="user_id" value="{{user_id}}">
+                        <input class="dnone" type="text" name="pay" value="{{pay}}">
+                        <input class="dnone" type="text" name="resume" value="{{resume}}">
+                        <input class="dnone" type="text" name="estado" value="{{estado}}">
+                        <input class="dnone" type="text" name="id_menu" value="{{id_menu}}">
+                        <button class="add del2" id="dbtn" type="submit"></button>
+                    </form>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<script src="../Interactive/autorefresh.js"></script>
+
+
+
